@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: haproxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: haproxy
+  template:
+    metadata:
+      labels:
+        app: haproxy
+    spec:
+      containers:
+        - name: haproxy
+          image: dockercloud/haproxy
+          env:
+            - name: MODE
+              value: http
+            - name: BACKENDS
+              value: web1,web2
+            - name: BALANCE
+              value: roundrobin
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: haproxy
+spec:
+  selector:
+    app: haproxy
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  type: NodePort # puedes cambiar a LoadBalancer si tu entorno lo soporta

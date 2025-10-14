@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web1:
+    image: nginx
+  web2:
+    image: nginx
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - web1
+      - web2
+    ports:
+      - 80:80
+    environment:
+      - MODE=http
+      - BACKENDS=web1,web2
+      - BALANCE=roundrobin

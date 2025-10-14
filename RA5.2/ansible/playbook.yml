@@ -1,0 +1,31 @@
+- name: Configurar VM Ubuntu con Apache
+  hosts: all
+  become: yes
+  tasks:
+    - name: Actualizar apt y hacer upgrade del sistema
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Crear archivo index.html con "Ansible rocks"
+      copy:
+        dest: /var/www/html/index.html
+        content: "Ansible rocks"
+
+    - name: Reiniciar Apache
+      service:
+        name: apache2
+        state: restarted
+
+    - name: Hacer curl al servidor web
+      command: curl http://localhost
+      register: curl_result
+
+    - name: Mostrar resultado del curl
+      debug:
+        msg: "{{ curl_result.stdout }}"

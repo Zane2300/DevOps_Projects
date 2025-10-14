@@ -103,3 +103,7 @@ Este proyecto demuestra:
 - Conversión de `docker-compose` a manifiestos Kubernetes
 - Uso de K9s para gestión visual del clúster
 - Validación de balanceo de carga con HAProxy
+
+## ✍️ Autor
+
+Alex Rosell

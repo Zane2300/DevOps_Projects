@@ -38,5 +38,5 @@ Demostrar, a través de distintos ejercicios prácticos, la capacidad para:
 
 ## ✍️ Autor
 
-Desarrollado por **Alex Rosell Angullo**  
+Desarrollado por **Alex Rosell**  
 Repositorio de prácticas DevOps · 2025

@@ -149,3 +149,6 @@ Ejemplo de un panel con la métrica `node_cpu_seconds_total`, mostrando el uso d
 * [https://github.com/google/cadvisor](https://github.com/google/cadvisor)
 * [https://github.com/prometheus/node\_exporter](https://github.com/prometheus/node_exporter)
 	
+## ✍️ Autor
+
+Alex Rosell

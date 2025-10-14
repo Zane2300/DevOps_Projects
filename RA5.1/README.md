@@ -137,5 +137,4 @@ Este proyecto demuestra cómo se puede configurar un sistema completo de CI/CD p
 
 ## ✍️ Autor
 
-Alex Rosell Angullo  
-Ejercicio de prácticas para integración Jenkins + GitHub
+Alex Rosell

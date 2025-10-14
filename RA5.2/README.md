@@ -95,6 +95,6 @@ Deberías ver en pantalla: **Ansible rocks**
 
 ---
 
-## 🧑 Autor
+## ✍️ Autor
 
-Práctica realizada por **PPS10752370**
+Alex Rosell

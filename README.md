@@ -1,4 +1,4 @@
-# 🚀 RA5 — DevOps Labs & Automation Suite
+# 🚀 DevOps Labs & Automation Suite
 
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-informational)]()
 [![Containers](https://img.shields.io/badge/Containers-Docker-blue)]()
@@ -79,15 +79,6 @@ cd RA5.4
 - RA5.1 incluye **pytest** y reporte de resultados en la pipeline.  
 - RA5.3 trae dashboards base y alertas opcionales.  
 - RA5.4 valida estado con `kubectl get nodes` y `k9s`.
-
----
-
-## 🤝 Contribuir
-
-1. Haz **fork** del repositorio.  
-2. Crea una rama `feature/nueva-mejora`.  
-3. Realiza cambios con commits claros.  
-4. Abre un **Pull Request** describiendo la motivación y pruebas.
 
 ---
 
